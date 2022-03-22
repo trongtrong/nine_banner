@@ -34,7 +34,7 @@ class _MyHomePageState extends State<MyHomePage> {
     //   });
     // });
 
-    NineBanner.readJson(context);
+    // NineBanner.readJson(context);
 
     super.initState();
   }
