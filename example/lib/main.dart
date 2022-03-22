@@ -28,11 +28,14 @@ class _MyHomePageState extends State<MyHomePage> {
 
   @override
   void initState() {
-    NineBanner.loadBanner('sds', (){
-      print('callback===================');
-      setState(() {
-      });
-    });
+    // NineBanner.loadBanner('sds', (){
+    //   print('callback===================');
+    //   setState(() {
+    //   });
+    // });
+
+    NineBanner.readJson(context);
+
     super.initState();
   }
 

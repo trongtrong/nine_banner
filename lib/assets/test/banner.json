@@ -1,0 +1,45 @@
+{
+  "id": "1",
+  "code": "popup_home_9pay",
+  "name": "Popup home 9pay",
+  "banners": [
+    {
+      "image": "https://storage.googleapis.com/npay/lixi-golivein-app-hero-1801-360x204x3-1642665858.jpg",
+      "sort": "1",
+      "start_time": "2022-03-13 12:00:00",
+      "end_time": "2022-04-13 12:00:00",
+      "status": "1",
+      "target": {
+        "name": "Screen buy MG Card",
+        "type": "SCREEN",
+        "value": "buy_mg_card",
+        "params": {}
+      },
+      "campaign": {
+        "id": 1,
+        "name": "Campaign test",
+        "start_time": "2022-03-13 12:00:00",
+        "end_time": "2022-04-13 12:00:00"
+      },
+      "segment": [
+        "ALL"
+      ]
+    }
+  ],
+  "zone": {
+    "id": 1,
+    "name": "Zone 1",
+    "code": "zone_1",
+    "type": {
+      "id": 1,
+      "name": "Popup banner",
+      "width": 360,
+      "height": 204
+    }
+  },
+  "screen": {
+    "id": 1,
+    "name": "Buy MG Card",
+    "code": "buy_mg_card"
+  }
+}

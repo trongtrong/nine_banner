@@ -13,9 +13,6 @@ class BannerView extends StatefulWidget {
 class _BannerViewState extends State<BannerView> {
   @override
   void initState() {
-
-
-
     super.initState();
   }
 

@@ -21,10 +21,14 @@ dev_dependencies:
   flutter_lints: ^1.0.0
 
 flutter:
+  uses-material-design: true
+  assets:
+    - assets/test/
+#    - assets/test/banner.json
 
 # To add assets to your package, add an assets section, like this:
-# assets:
-#   - images/a_dot_burr.jpeg
+#  assets:
+#    - assets/test
 #   - images/a_dot_ham.jpeg
 #
 # For details regarding assets in packages, see
