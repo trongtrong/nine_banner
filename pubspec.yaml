@@ -1,7 +1,7 @@
 name: nine_banner
 description: A new Flutter project.
 version: 0.0.1
-homepage:
+homepage: https://github.com/trongtrong/nine_banner
 
 environment:
   sdk: ">=2.7.0 <3.0.0"
