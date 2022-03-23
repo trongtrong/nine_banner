@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:nine_banner/nine_banner.dart';
+import 'package:nine_banner/view/banner_view.dart';
 
 void main() {
   runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
-
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home:  MyHomePage(),
+      home: MyHomePage(),
     );
   }
 }
@@ -25,17 +25,8 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-
   @override
   void initState() {
-    // NineBanner.loadBanner('sds', (){
-    //   print('callback===================');
-    //   setState(() {
-    //   });
-    // });
-
-    // NineBanner.readJson(context);
-
     super.initState();
   }
 
@@ -46,7 +37,9 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text('widget.title'),
       ),
       body: Center(
-        child: Text(NineBanner.isTest ? 'true' : 'false'),
+        child: BannerView(inventory: 'inventory', onPressed: (reminder) {
+          //TODO
+        }),
       ),
     );
   }

@@ -4,7 +4,7 @@
 
 import 'dart:convert';
 
-BannerModel bannerModelFromJson(dynamic str) => BannerModel.fromJson(str);
+BannerModel bannerModelFromJson(String str) => BannerModel.fromJson(json.decode(str));
 
 String bannerModelToJson(BannerModel data) => json.encode(data.toJson());
 
@@ -21,7 +21,7 @@ class BannerModel {
   String id;
   String code;
   String name;
-  List<Banner> banners;
+  List<BannerItem> banners;
   Screen zone;
   Screen screen;
 
@@ -29,7 +29,7 @@ class BannerModel {
     id: json["id"],
     code: json["code"],
     name: json["name"],
-    banners: List<Banner>.from(json["banners"].map((x) => Banner.fromJson(x))),
+    banners: List<BannerItem>.from(json["banners"].map((x) => BannerItem.fromJson(x))),
     zone: Screen.fromJson(json["zone"]),
     screen: Screen.fromJson(json["screen"]),
   );
@@ -44,8 +44,8 @@ class BannerModel {
   };
 }
 
-class Banner {
-  Banner({
+class BannerItem {
+  BannerItem({
     this.image,
     this.sort,
     this.startTime,
@@ -65,7 +65,7 @@ class Banner {
   Campaign campaign;
   List<String> segment;
 
-  factory Banner.fromJson(Map<String, dynamic> json) => Banner(
+  factory BannerItem.fromJson(Map<String, dynamic> json) => BannerItem(
     image: json["image"],
     sort: json["sort"],
     startTime: DateTime.parse(json["start_time"]),
